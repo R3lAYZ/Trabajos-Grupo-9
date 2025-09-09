@@ -1,0 +1,25 @@
+INICIO
+
+    Escribir "Ingrese el precio del producto"
+    Leer precioP1
+
+    Escribir "Ingrese cuanto va a comprar"
+    Leer cantiU
+
+    subtotal ← precioP1 * cantiU
+
+    SI subtotal >= 100 ENTONCES
+        Escribir "Aplica a descuento del 15%"
+        descuento ← subtotal * 0.15
+
+    SINO
+        Escribir "No aplica a descuento"
+        descuento ← 0
+
+    FIN SI
+
+    total ← subtotal - descuento
+
+    Escribir "Usted pagará ", total
+
+FIN
