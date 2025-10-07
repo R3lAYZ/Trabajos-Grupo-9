@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static double Factorial(int n)
+    {
+        double f = 1;
+        for (int i = 1; i <= n; i++)
+            f *= i;
+        return f;
+    }
+
+    static void Main()
+    {
+        Console.Write("Ingrese el valor de n: ");
+        int n = int.Parse(Console.ReadLine());
+
+        double suma = 0;
+
+        for (int i = 1; i <= n; i++)
+            suma += Math.Pow(i, i) / Factorial(i);
+
+        Console.WriteLine("El valor de la serie es: " + suma);
+    }
+}
